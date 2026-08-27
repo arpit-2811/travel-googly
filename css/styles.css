@@ -463,6 +463,70 @@ ul, ol {
   color: var(--accent-wash);
 }
 
+/* Navigation Dropdown Menu */
+.nav-item-dropdown {
+  position: relative;
+  padding: 8px 0;
+}
+
+.site-nav__link--has-dropdown {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.dropdown-chevron {
+  transition: transform var(--transition-fast);
+}
+
+.nav-item-dropdown:hover .dropdown-chevron,
+.nav-item-dropdown:focus-within .dropdown-chevron {
+  transform: rotate(180deg);
+}
+
+.nav-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: -12px;
+  min-width: 220px;
+  background-color: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  padding: var(--space-8) 0;
+  box-shadow: 0 12px 32px rgba(14, 17, 22, 0.14);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: opacity var(--transition-fast), transform var(--transition-fast), visibility var(--transition-fast);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-item-dropdown:hover .nav-dropdown-menu,
+.nav-item-dropdown:focus-within .nav-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+  padding: 10px var(--space-16);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--ink);
+  white-space: nowrap;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.dropdown-link:hover {
+  background-color: var(--accent-wash);
+  color: var(--accent);
+}
+
 .site-header__actions {
   display: flex;
   align-items: center;
@@ -584,6 +648,26 @@ ul, ol {
 
 .mobile-drawer__link:hover {
   color: var(--accent);
+}
+
+.drawer-subheading {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: var(--ink-soft);
+  letter-spacing: 0.08em;
+  margin-top: 4px;
+}
+
+.mobile-drawer__link--sub {
+  font-size: 1.0625rem !important;
+  font-weight: 500 !important;
+  padding-left: 12px;
+  color: var(--ink-soft) !important;
+}
+
+.mobile-drawer__link--sub:hover {
+  color: var(--accent) !important;
 }
 
 .mobile-drawer__footer {

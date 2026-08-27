@@ -552,6 +552,29 @@
       const cat = chip.getAttribute('data-filter') || 'all';
       renderPackages(cat);
     });
+
+    // Global filter trigger handling (from navbar dropdowns or mobile drawer)
+    document.addEventListener('click', (e) => {
+      const trigger = e.target.closest('[data-filter-trigger]');
+      if (trigger) {
+        const cat = trigger.getAttribute('data-filter-trigger');
+        const filterChip = document.querySelector(`.chip[data-filter="${cat}"]`);
+        if (filterChip) {
+          filterChip.click();
+          const packagesSection = document.getElementById('packages');
+          if (packagesSection) {
+            packagesSection.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+        // Close mobile drawer if open
+        const mobileDrawer = document.getElementById('mobile-drawer');
+        const menuToggle = document.getElementById('menu-toggle');
+        if (mobileDrawer && mobileDrawer.classList.contains('is-open')) {
+          mobileDrawer.classList.remove('is-open');
+          if (menuToggle) menuToggle.classList.remove('is-open');
+        }
+      }
+    });
   }
 
   /* ==========================================================================

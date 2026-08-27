@@ -76,12 +76,22 @@
 
       <nav class="site-nav" aria-label="Primary navigation">
         <ul class="site-nav__list">
-          <li><a href="index.html#packages" class="site-nav__link">All Packages</a></li>
+          <li><a href="index.html" class="site-nav__link">Home</a></li>
+          <li><a href="about.html" class="site-nav__link is-active" style="color: var(--accent); font-weight: 600;">About Us</a></li>
+          <li class="nav-item-dropdown">
+            <a href="index.html#packages" class="site-nav__link site-nav__link--has-dropdown" aria-haspopup="true" aria-expanded="false">
+              Packages
+              <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+            </a>
+            <ul class="nav-dropdown-menu">
+              <li><a href="index.html#packages" class="dropdown-link" data-filter-trigger="domestic">🇮🇳 Domestic Tours</a></li>
+              <li><a href="index.html#packages" class="dropdown-link" data-filter-trigger="international">✈️ International Tours</a></li>
+              <li><a href="index.html#packages" class="dropdown-link" data-filter-trigger="all">🌴 All Holiday Packages</a></li>
+            </ul>
+          </li>
           <li><a href="index.html#destinations" class="site-nav__link">Destinations</a></li>
-          <li><a href="about.html" class="site-nav__link is-active" style="color: var(--accent);">About Us</a></li>
-          <li><a href="index.html#why-us" class="site-nav__link">Why Us</a></li>
           <li><a href="index.html#reviews" class="site-nav__link">Reviews</a></li>
-          <li><a href="index.html#contact" class="site-nav__link">Contact</a></li>
+          <li><a href="index.html#contact" class="site-nav__link">Contact Us</a></li>
         </ul>
       </nav>
 
@@ -107,12 +117,15 @@
       </div>
       <nav aria-label="Mobile navigation">
         <ul class="mobile-drawer__list">
-          <li><a href="index.html#packages" class="mobile-drawer__link">All Packages</a></li>
-          <li><a href="index.html#destinations" class="mobile-drawer__link">Destinations</a></li>
+          <li><a href="index.html" class="mobile-drawer__link">Home</a></li>
           <li><a href="about.html" class="mobile-drawer__link" style="font-weight: 700; color: var(--accent);">About Us</a></li>
-          <li><a href="index.html#why-us" class="mobile-drawer__link">Why Us</a></li>
+          <li class="drawer-subheading">PACKAGES</li>
+          <li><a href="index.html#packages" class="mobile-drawer__link mobile-drawer__link--sub" data-filter-trigger="domestic">🇮🇳 Domestic Tours</a></li>
+          <li><a href="index.html#packages" class="mobile-drawer__link mobile-drawer__link--sub" data-filter-trigger="international">✈️ International Tours</a></li>
+          <li><a href="index.html#packages" class="mobile-drawer__link mobile-drawer__link--sub" data-filter-trigger="all">🌴 All Holiday Packages</a></li>
+          <li><a href="index.html#destinations" class="mobile-drawer__link">Destinations</a></li>
           <li><a href="index.html#reviews" class="mobile-drawer__link">Reviews</a></li>
-          <li><a href="index.html#contact" class="mobile-drawer__link">Contact</a></li>
+          <li><a href="index.html#contact" class="mobile-drawer__link">Contact Us</a></li>
         </ul>
       </nav>
       <div class="mobile-drawer__footer">
