@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tour Package Details — Travel Googly</title>
+  <meta name="description" content="View detailed day-by-day itinerary, hotel inclusions, transparent pricing, and instant WhatsApp booking for tour packages by Travel Googly.">
+  <meta name="theme-color" content="#0E1116">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Tour Package Details — Travel Googly">
+  <meta property="og:description" content="Explore customized itineraries with verified hotels and transparent per-person pricing in INR.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       HEADER & NAVIGATION
+       ======================================================================== -->
+  <header class="site-header is-scrolled" role="banner">
+    <div class="container">
+      <a href="index.html" class="site-logo" aria-label="Travel Googly Home">
+        <img src="assets/logo-light.svg" alt="Travel Googly" class="logo-light" width="148" height="36">
+        <img src="assets/logo.svg" alt="Travel Googly" class="logo-dark" width="148" height="36">
+      </a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <ul class="site-nav__list">
+          <li><a href="index.html#packages" class="site-nav__link">All Packages</a></li>
+          <li><a href="index.html#destinations" class="site-nav__link">Destinations</a></li>
+          <li><a href="about.html" class="site-nav__link">About Us</a></li>
+          <li><a href="index.html#why-us" class="site-nav__link">Why Us</a></li>
+          <li><a href="index.html#reviews" class="site-nav__link">Reviews</a></li>
+          <li><a href="index.html#contact" class="site-nav__link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-header__actions">
+        <button type="button" class="btn btn--primary btn-open-inquiry">Plan my trip</button>
+        <button type="button" class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+    <div class="mobile-drawer__content">
+      <div class="mobile-drawer__header">
+        <a href="index.html" class="site-logo">
+          <img src="assets/logo-light.svg" alt="Travel Googly" class="logo-light" width="148" height="36">
+          <img src="assets/logo.svg" alt="Travel Googly" class="logo-dark" width="148" height="36">
+        </a>
+      </div>
+      <nav aria-label="Mobile navigation">
+        <ul class="mobile-drawer__list">
+          <li><a href="index.html#packages" class="mobile-drawer__link">All Packages</a></li>
+          <li><a href="index.html#destinations" class="mobile-drawer__link">Destinations</a></li>
+          <li><a href="about.html" class="mobile-drawer__link">About Us</a></li>
+          <li><a href="index.html#why-us" class="mobile-drawer__link">Why Us</a></li>
+          <li><a href="index.html#reviews" class="mobile-drawer__link">Reviews</a></li>
+          <li><a href="index.html#contact" class="mobile-drawer__link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-drawer__footer">
+        <button type="button" class="btn btn--primary btn--full btn-open-inquiry">
+          Plan my trip
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dynamic Content Container -->
+  <div id="package-detail-content">
+    <!-- Populated dynamically via js/main.js from URL parameter ?slug=... -->
+  </div>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="site-footer" role="contentinfo" style="margin-top: 64px;">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="site-logo">
+            <img src="assets/logo-light.svg" alt="Travel Googly" class="logo-light" width="148" height="36">
+            <img src="assets/logo.svg" alt="Travel Googly" class="logo-dark" width="148" height="36">
+          </a>
+          <p>Custom-tailored holiday packages for Indian travelers with hand-picked hotels, transparent rates, and instant quotes on WhatsApp.</p>
+          <p style="font-size: 0.8125rem; color: rgba(255, 255, 255, 0.6); margin-top: 4px;">
+            Shop No. 10, Jiwaji Ganj, Morena, Madhya Pradesh – 476001
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-col__title">Popular Packages</div>
+          <div class="footer-links">
+            <a href="package.html?slug=nepal-kathmandu-pokhara-valley">Nepal Kathmandu & Pokhara</a>
+            <a href="package.html?slug=nepal-muktinath-yatra-pilgrimage">Nepal Muktinath Yatra</a>
+            <a href="package.html?slug=goa-beach-break">Goa Beach Break</a>
+            <a href="package.html?slug=kashmir-valley-gulmarg">Kashmir Valley & Gulmarg</a>
+            <a href="package.html?slug=bali-tropical-honeymoon">Bali Villa Honeymoon</a>
+            <a href="package.html?slug=char-dham-yatra">Char Dham Yatra</a>
+            <a href="package.html?slug=dubai-city-desert-adventure">Dubai City & Desert</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-col__title">Quick Links</div>
+          <div class="footer-links">
+            <a href="index.html#packages">All Packages</a>
+            <a href="index.html#destinations">Destinations</a>
+            <a href="index.html#about">About Agency</a>
+            <a href="index.html#reviews">Traveler Reviews</a>
+            <a href="index.html#faq">Frequently Asked Questions</a>
+            <a href="index.html#contact">Contact Support</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-col__title">WhatsApp Travel Desk</div>
+          <p style="font-size: 0.875rem;">Fastest way to get quotes & itinerary assistance:</p>
+          <a href="tel:+918319390510" class="font-mono" style="color: #FFFFFF; font-size: 1.125rem;">+91 83193 90510</a>
+          <a href="mailto:info@travelgoogly.org" style="color: rgba(255, 255, 255, 0.8); font-size: 0.875rem; display: block; margin-top: 4px;">info@travelgoogly.org</a>
+          <p style="font-size: 0.75rem; color: rgba(255, 255, 255, 0.5); margin-top: 4px;">Available Mon–Sun: 9:00 AM – 9:00 PM IST</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Travel Googly. All rights reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Cancellation Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       SIGNATURE INQUIRY POPUP MODAL
+       ======================================================================== -->
+  <div class="modal-overlay" id="inquiry-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="inquiry-modal-title">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <img src="assets/logo.svg" alt="Travel Googly" width="120" height="28" style="height: 28px; width: auto;">
+          <span class="chip is-active" style="padding: 2px 8px; font-size: 0.6875rem;">Instant Quote</span>
+        </div>
+        <button type="button" class="modal-close-btn" id="inquiry-close-btn" aria-label="Close inquiry modal">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <h2 id="inquiry-modal-title" style="font-size: 1.35rem; margin-bottom: 6px;">Where would you like to travel?</h2>
+        <p style="font-size: 0.875rem; margin-bottom: 20px;">Fill out this quick 30-second form to receive 2–3 customized quote options directly on WhatsApp.</p>
+
+        <form id="inquiry-form" novalidate>
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label for="inq-name" class="form-label">Full name <span class="req">*</span></label>
+              <input type="text" id="inq-name" class="form-control" placeholder="e.g. Ankit Sharma" required autocomplete="name">
+              <span class="form-error" id="err-name">Please enter your name.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="inq-mobile" class="form-label">WhatsApp number <span class="req">*</span></label>
+              <input type="tel" id="inq-mobile" inputmode="numeric" class="form-control" placeholder="10-digit mobile (e.g. 9876543210)" required autocomplete="tel">
+              <span class="form-error" id="err-mobile">Please enter a valid 10-digit mobile number.</span>
+            </div>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label for="inq-destination" class="form-label">Destination <span class="req">*</span></label>
+              <select id="inq-destination" class="form-control" required>
+                <option value="" disabled selected>Select destination</option>
+                <optgroup label="Domestic Destinations">
+                  <option value="Goa">Goa Beach Break</option>
+                  <option value="Kashmir">Kashmir & Gulmarg</option>
+                  <option value="Manali">Manali & Solang</option>
+                  <option value="Kerala">Kerala Backwaters & Munnar</option>
+                  <option value="Rajasthan">Rajasthan Heritage Circuit</option>
+                  <option value="Andaman">Andaman Islands</option>
+                  <option value="Ladakh">Ladakh Bike / SUV Tour</option>
+                  <option value="Northeast">Northeast & Meghalaya</option>
+                  <option value="Char Dham">Char Dham Yatra</option>
+                  <option value="Do Dham">Do Dham (Kedarnath-Badrinath)</option>
+                </optgroup>
+                <optgroup label="International Destinations">
+                  <option value="Nepal (Kathmandu & Pokhara)">Nepal (Kathmandu & Pokhara)</option>
+                  <option value="Nepal (Muktinath Yatra)">Nepal (Muktinath Yatra)</option>
+                  <option value="Dubai">Dubai & Abu Dhabi</option>
+                  <option value="Thailand">Thailand (Bangkok-Pattaya-Phuket)</option>
+                  <option value="Bali">Bali Villa & Island</option>
+                  <option value="Singapore–Malaysia">Singapore & Malaysia</option>
+                  <option value="Vietnam">Vietnam Discovery</option>
+                  <option value="Maldives">Maldives Luxury Resort</option>
+                  <option value="Sri Lanka">Sri Lanka Highlights</option>
+                  <option value="Europe">Europe Classic</option>
+                  <option value="Azerbaijan">Azerbaijan Baku</option>
+                </optgroup>
+                <optgroup label="Other">
+                  <option value="Custom / Need suggestions">Custom / Need suggestions</option>
+                </optgroup>
+              </select>
+              <span class="form-error" id="err-destination">Please choose a destination.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="inq-travellers" class="form-label">Travellers <span class="req">*</span></label>
+              <input type="number" id="inq-travellers" class="form-control" min="1" max="30" value="2" required>
+              <span class="form-error" id="err-travellers">Please specify number of travellers (1–30).</span>
+            </div>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label for="inq-month" class="form-label">Travel month <span class="req">*</span></label>
+              <select id="inq-month" class="form-control js-month-select" required>
+                <option value="" disabled selected>Select month</option>
+              </select>
+              <span class="form-error" id="err-month">Please select preferred month.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="inq-budget" class="form-label">Budget per person <span class="req">*</span></label>
+              <select id="inq-budget" class="form-control" required>
+                <option value="" disabled selected>Select budget range</option>
+                <option value="Under ₹15,000">Under ₹15,000</option>
+                <option value="₹15,000–30,000">₹15,000–30,000</option>
+                <option value="₹30,000–60,000">₹30,000–60,000</option>
+                <option value="₹60,000–1,00,000">₹60,000–1,00,000</option>
+                <option value="Above ₹1,00,000">Above ₹1,00,000</option>
+                <option value="Need suggestions">Need suggestions</option>
+              </select>
+              <span class="form-error" id="err-budget">Please select an estimated budget.</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="form-label">
+              <span>Anything specific? (optional)</span>
+              <span class="form-char-count" id="inquiry-char-counter">0/300 chars</span>
+            </div>
+            <textarea id="inq-notes" class="form-control" rows="2" maxlength="300" placeholder="e.g. Honeymoon candlelight dinner, 4-star hotel preference, vegetarian meals..."></textarea>
+          </div>
+
+          <div class="form-group" style="margin-top: 12px;">
+            <label class="form-checkbox-label">
+              <input type="checkbox" id="inq-offers" checked>
+              <span>Send me special offers and festival discounts on WhatsApp</span>
+            </label>
+          </div>
+
+          <div style="margin-top: 20px;">
+            <button type="submit" class="btn btn--wa btn--full" style="font-size: 1rem; padding: 14px 20px;">
+              Send Inquiry on WhatsApp →
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn--text" id="inquiry-maybe-later">Maybe later</button>
+        <span style="font-size: 0.75rem; color: var(--ink-soft);">🔒 No spam • We respond within 2 hours</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       FLOATING ACTIONS (WhatsApp & Back To Top)
+       ======================================================================== -->
+  <div class="floating-actions" aria-label="Quick actions">
+    <button type="button" class="btn-back-to-top" id="back-to-top-btn" aria-label="Scroll back to top">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <a href="#" class="btn-floating-wa has-pulse" id="floating-wa-btn" target="_blank" rel="noopener" aria-label="Chat with Travel Googly on WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.03C9.36 7.03 9.08 7.09 8.84 7.35C8.61 7.61 7.94 8.23 7.94 9.5C7.94 10.77 8.86 12 9 12.18C9.13 12.36 10.8 14.93 13.36 16.03C15.5 16.96 15.93 16.77 16.39 16.73C16.85 16.69 17.88 16.12 18.09 15.53C18.3 14.94 18.3 14.43 18.24 14.33C18.17 14.23 18.01 14.17 17.76 14.04C17.51 13.92 16.28 13.31 16.05 13.23C15.82 13.15 15.66 13.1 15.5 13.34C15.33 13.59 14.86 14.14 14.72 14.3C14.58 14.46 14.44 14.48 14.19 14.36C13.94 14.23 12.9 13.89 11.66 12.79C10.7 11.93 10.05 10.87 9.91 10.63C9.77 10.38 9.89 10.25 10.02 10.13C10.13 10.02 10.27 9.84 10.39 9.7C10.51 9.56 10.56 9.45 10.64 9.29C10.72 9.12 10.68 8.98 10.62 8.85C10.56 8.73 10.09 7.57 9.9 7.09C9.71 6.63 9.52 6.69 9.38 6.68L8.94 6.68C8.94 6.68 9.53 7.03 9.53 7.03Z"/></svg>
+    </a>
+  </div>
+
+  <!-- Plain script imports (no type="module", runs cleanly over file://) -->
+  <script src="js/whatsapp.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

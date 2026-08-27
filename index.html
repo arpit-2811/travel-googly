@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Googly — Custom Tour Packages & Trip Inquiries on WhatsApp</title>
+  <meta name="description" content="Plan domestic and international holidays, honeymoon specials, Char Dham pilgrimage yatras, and adventure tours with Travel Googly. Get custom quotes on WhatsApp within 2 hours.">
+  <meta name="theme-color" content="#0E1116">
+  <link rel="canonical" href="https://travelgoogly.com/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://travelgoogly.com/">
+  <meta property="og:title" content="Travel Googly — Custom Tour Packages & Inquiries on WhatsApp">
+  <meta property="og:description" content="Customized domestic and international tour packages for Indian travelers. Transparent pricing, verified hotels, and instant quotes on WhatsApp.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Travel Googly — Custom Tour Packages & Inquiries on WhatsApp">
+  <meta name="twitter:description" content="Customized domestic and international tour packages for Indian travelers. Transparent pricing, verified hotels, and instant quotes on WhatsApp.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- JSON-LD Structured Data Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "Travel Googly",
+    "founder": {
+      "@type": "Person",
+      "name": "Pankaj Sharma"
+    },
+    "image": "https://travelgoogly.com/assets/logo.svg",
+    "telephone": "+918319390510",
+    "email": "info@travelgoogly.org",
+    "url": "https://travelgoogly.com",
+    "priceRange": "₹₹",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "09:00",
+        "closes": "21:00"
+      }
+    ],
+    "description": "Indian tour and travel agency offering domestic packages, international holidays, honeymoon specials, Char Dham yatras, and adventure expeditions.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Shop No. 10, Jiwaji Ganj",
+      "addressLocality": "Morena",
+      "addressRegion": "Madhya Pradesh",
+      "postalCode": "476001",
+      "addressCountry": "IN"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Tour Packages",
+      "itemListElement": [
+        { "@type": "OfferCatalog", "name": "Domestic Tours" },
+        { "@type": "OfferCatalog", "name": "International Tours" },
+        { "@type": "OfferCatalog", "name": "Honeymoon Specials" },
+        { "@type": "OfferCatalog", "name": "Pilgrimage Yatras" },
+        { "@type": "OfferCatalog", "name": "Adventure & Trekking" },
+        { "@type": "OfferCatalog", "name": "Weekend Getaways" }
+      ]
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ========================================================================
+       HEADER & NAVIGATION
+       ======================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="index.html" class="site-logo" aria-label="Travel Googly Home">
+        <img src="assets/logo-light.svg" alt="Travel Googly" class="logo-light" width="148" height="36">
+        <img src="assets/logo.svg" alt="Travel Googly" class="logo-dark" width="148" height="36">
+      </a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <ul class="site-nav__list">
+          <li><a href="#packages" class="site-nav__link">Packages</a></li>
+          <li><a href="#destinations" class="site-nav__link">Destinations</a></li>
+          <li><a href="about.html" class="site-nav__link">About Us</a></li>
+          <li><a href="#why-us" class="site-nav__link">Why Us</a></li>
+          <li><a href="#reviews" class="site-nav__link">Reviews</a></li>
+          <li><a href="#faq" class="site-nav__link">FAQs</a></li>
+          <li><a href="#contact" class="site-nav__link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-header__actions">
+        <button type="button" class="btn btn--primary btn-open-inquiry">Plan my trip</button>
+        <button type="button" class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+    <div class="mobile-drawer__content">
+      <div class="mobile-drawer__header">
+        <a href="index.html" class="site-logo">
+          <img src="assets/logo-light.svg" alt="Travel Googly" class="logo-light" width="148" height="36">
+          <img src="assets/logo.svg" alt="Travel Googly" class="logo-dark" width="148" height="36">
+        </a>
+      </div>
+      <nav aria-label="Mobile navigation">
+        <ul class="mobile-drawer__list">
+          <li><a href="#packages" class="mobile-drawer__link">Packages</a></li>
+          <li><a href="#destinations" class="mobile-drawer__link">Destinations</a></li>
+          <li><a href="about.html" class="mobile-drawer__link">About Us</a></li>
+          <li><a href="#why-us" class="mobile-drawer__link">Why Us</a></li>
+          <li><a href="#reviews" class="mobile-drawer__link">Reviews</a></li>
+          <li><a href="#faq" class="mobile-drawer__link">FAQs</a></li>
+          <li><a href="#contact" class="mobile-drawer__link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-drawer__footer">
+        <button type="button" class="btn btn--primary btn--full btn-open-inquiry">
+          Plan my trip
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ======================================================================
+         HERO SECTION
+         ====================================================================== -->
+    <section class="hero" aria-label="Introduction">
+      <!-- Full-bleed background photo -->
+      <img src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?auto=format&fit=crop&w=1920&q=80" alt="Scenic Himalayan mountain pass" class="hero__bg" loading="eager">
+      <div class="hero__scrim"></div>
+
+      <div class="container">
+        <div class="hero__content">
+          <div class="hero__badge">
+            <span>✦</span> YOUR TRUSTED INDIAN TRAVEL PARTNER
+          </div>
+          <h1 class="hero__title">Hassle-Free Holidays, Tailored on WhatsApp</h1>
+          <p class="hero__subtitle">Customized domestic & international tour packages, transparent pricing in ₹ INR, verified hotels, and 24×7 human support on WhatsApp.</p>
+
+          <!-- Inline Trip Finder Form -->
+          <form class="hero__finder" id="hero-finder-form">
+            <div class="finder-field">
+              <label for="finder-destination">Destination</label>
+              <select id="finder-destination" required>
+                <option value="" disabled selected>Where do you want to go?</option>
+                <optgroup label="Popular Domestic">
+                  <option value="Goa">Goa</option>
+                  <option value="Kashmir">Kashmir</option>
+                  <option value="Manali">Manali & Solang</option>
+                  <option value="Kerala">Kerala Backwaters</option>
+                  <option value="Rajasthan">Rajasthan Heritage</option>
+                  <option value="Ladakh">Ladakh Expedition</option>
+                  <option value="Andaman">Andaman Islands</option>
+                  <option value="Char Dham">Char Dham Yatra</option>
+                </optgroup>
+                <optgroup label="Popular International">
+                  <option value="Nepal">Nepal (Kathmandu & Pokhara)</option>
+                  <option value="Dubai">Dubai & Abu Dhabi</option>
+                  <option value="Bali">Bali Villa Special</option>
+                  <option value="Thailand">Thailand (Bangkok-Pattaya)</option>
+                  <option value="Singapore & Malaysia">Singapore & Malaysia</option>
+                  <option value="Vietnam">Vietnam Highlights</option>
+                  <option value="Maldives">Maldives Island Resort</option>
+                </optgroup>
+                <optgroup label="Other">
+                  <option value="Need suggestions">Need suggestions</option>
+                </optgroup>
+              </select>
+            </div>
+
+            <div class="finder-field">
+              <label for="finder-month">Travel Month</label>
+              <select id="finder-month" class="js-month-select" required>
+                <option value="" disabled selected>Select month</option>
+              </select>
+            </div>
+
+            <div class="finder-field">
+              <label for="finder-travellers">Guests</label>
+              <input type="number" id="finder-travellers" min="1" max="30" value="2" required>
+            </div>
+
+            <div>
+              <button type="submit" class="btn btn--primary btn--full" style="padding: 12px 20px;">
+                Get Instant Quote →
+              </button>
+            </div>
+          </form>
+
+          <!-- Trust Markers -->
+          <div class="hero__trust">
+            <div class="trust-item"><span>2,000+</span> TRIPS PLANNED</div>
+            <div class="trust-item"><span>48</span> DESTINATIONS</div>
+            <div class="trust-item"><span>4.9★</span> ON GOOGLE</div>
+            <div class="trust-item"><span>SINCE 2018</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         PACKAGE CATEGORIES SECTION
+         ====================================================================== -->
+    <section class="section section--alt" id="categories" aria-labelledby="categories-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">EXPLORE BY REGION</span>
+          <h2 class="section-title" id="categories-heading">Domestic & International Tour Packages</h2>
+          <p class="section-lead">Choose your travel horizon: discover India's scenic landscapes & sacred heritage, or embark on a memorable overseas vacation.</p>
+        </div>
+
+        <div class="categories-grid" id="categories-grid">
+          <!-- Dynamically populated from js/data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         FEATURED PACKAGES SECTION
+         ====================================================================== -->
+    <section class="section" id="packages" aria-labelledby="packages-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">CURATED ITINERARIES</span>
+          <h2 class="section-title" id="packages-heading">Trending Holiday Packages</h2>
+          <p class="section-lead">Hand-picked itineraries with verified 3★–5★ hotel stays, private transfers, and low starting rates tailored to your travel dates.</p>
+        </div>
+
+        <!-- Filter Chips & Status -->
+        <div class="filter-bar">
+          <div class="filter-chips" id="filter-chips" role="tablist" aria-label="Filter packages by category">
+            <button type="button" class="chip is-active" data-filter="all">All Packages</button>
+            <button type="button" class="chip" data-filter="domestic">Domestic Tours</button>
+            <button type="button" class="chip" data-filter="international">International Tours</button>
+            <button type="button" class="chip" data-filter="pilgrimage">Pilgrimage Yatras</button>
+          </div>
+          <div class="filter-live-count" id="filter-live-count" aria-live="polite">
+            Showing 14 packages
+          </div>
+        </div>
+
+        <!-- Packages Grid -->
+        <div class="packages-grid" id="packages-grid">
+          <!-- Dynamically populated from js/data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         DESTINATIONS MOSAIC SECTION
+         ====================================================================== -->
+    <section class="section section--alt" id="destinations" aria-labelledby="destinations-heading">
+      <div class="container">
+        <div class="section-header section-header--center">
+          <span class="section-tag">POPULAR DESTINATIONS</span>
+          <h2 class="section-title" id="destinations-heading">Top Picks For Your Next Getaway</h2>
+          <p class="section-lead">Click any destination to request customized hotel and sightseeing quotes on WhatsApp.</p>
+        </div>
+
+        <!-- Domestic / International Tabs -->
+        <div class="destinations-tabs" role="tablist" aria-label="Destination region tabs">
+          <button type="button" class="chip is-active" id="dest-tab-domestic" role="tab" aria-selected="true">Domestic Destinations</button>
+          <button type="button" class="chip" id="dest-tab-international" role="tab" aria-selected="false">International Destinations</button>
+        </div>
+
+        <!-- Asymmetric Mosaic Grid -->
+        <div class="destinations-mosaic" id="destinations-mosaic">
+          <!-- Dynamically populated from js/data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         HOW IT WORKS SECTION
+         ====================================================================== -->
+    <section class="section" id="how-it-works" aria-labelledby="how-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">SIMPLE & TRANSPARENT</span>
+          <h2 class="section-title" id="how-heading">How Booking Works</h2>
+          <p class="section-lead">No complicated portals or endless forms. Plan your whole holiday in 4 straightforward steps.</p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card reveal">
+            <div class="step-card__num">01</div>
+            <h3 class="step-card__title">Tell Us Your Trip</h3>
+            <p class="step-card__desc">Choose your destination, preferred travel month, and guest count via our quick inquiry popup.</p>
+          </div>
+
+          <div class="step-card reveal">
+            <div class="step-card__num">02</div>
+            <h3 class="step-card__title">Get 2–3 Quotes on WhatsApp</h3>
+            <p class="step-card__desc">Our destination specialist drafts customized itineraries with transparent price breakdowns within 2 hours.</p>
+          </div>
+
+          <div class="step-card reveal">
+            <div class="step-card__num">03</div>
+            <h3 class="step-card__title">Pay 25% to Confirm</h3>
+            <p class="step-card__desc">Lock in your hotels, cabs, and sightseeing vouchers with a secure 25% advance deposit.</p>
+          </div>
+
+          <div class="step-card reveal">
+            <div class="step-card__num">04</div>
+            <h3 class="step-card__title">Travel with 24×7 Support</h3>
+            <p class="step-card__desc">Enjoy your trip with a dedicated WhatsApp on-trip coordinator assisting you every single day.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         WHY TRAVEL GOOGLY SECTION
+         ====================================================================== -->
+    <section class="section section--alt" id="why-us" aria-labelledby="why-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">THE TRAVEL GOOGLY PROMISE</span>
+          <h2 class="section-title" id="why-heading">Why Indian Travelers Choose Us</h2>
+          <p class="section-lead">We believe in transparent pricing, verified hotel partnerships, and real human support from start to finish.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card reveal">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+            </div>
+            <h3 class="feature-card__title">No Hidden Charges</h3>
+            <p class="feature-card__desc">Itemised GST invoices with every hotel, private transfer, meal plan, and tax clearly stated upfront. No surprise fees at checkout.</p>
+          </div>
+
+          <div class="feature-card reveal">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <h3 class="feature-card__title">Hand-Picked 3★–5★ Hotels</h3>
+            <p class="feature-card__desc">We only partner with vetted resorts and hotels with verified positive guest ratings, hot water, good hygiene, and quality breakfast.</p>
+          </div>
+
+          <div class="feature-card reveal">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+            </div>
+            <h3 class="feature-card__title">100% Customisable Plans</h3>
+            <p class="feature-card__desc">Want to add an extra day in Munnar or upgrade to a private pool villa in Seminyak? Every itinerary flexes around your preferences.</p>
+          </div>
+
+          <div class="feature-card reveal">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+            </div>
+            <h3 class="feature-card__title">On-Trip WhatsApp Support</h3>
+            <p class="feature-card__desc">Direct access to your dedicated tour manager throughout your holiday to assist with cab timings, restaurant recommendations, and queries.</p>
+          </div>
+
+          <div class="feature-card reveal">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+            </div>
+            <h3 class="feature-card__title">Verified Chauffeurs & Fleets</h3>
+            <p class="feature-card__desc">Clean, air-conditioned sedans and SUVs driven by experienced local drivers who know the mountain terrains and local sights intimately.</p>
+          </div>
+
+          <div class="feature-card reveal">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+            </div>
+            <h3 class="feature-card__title">Flexible Date Adjustments</h3>
+            <p class="feature-card__desc">Life happens. If your travel dates shift unexpectedly, we work closely with our hotel partners to reschedule with minimal friction.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         REVIEWS SECTION
+         ======================================================================== -->
+    <section class="section" id="reviews" aria-labelledby="reviews-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">GUEST EXPERIENCES</span>
+          <h2 class="section-title" id="reviews-heading">Loved By 2,000+ Indian Travelers</h2>
+          <p class="section-lead">Real stories from families, couples, and adventure groups who planned their holidays with Travel Googly.</p>
+        </div>
+
+        <div class="reviews-wrapper">
+          <div class="reviews-slider" id="reviews-slider" tabindex="0" role="region" aria-label="Customer reviews carousel">
+            <!-- Dynamically populated from js/data.js -->
+          </div>
+
+          <div class="reviews-controls">
+            <button type="button" class="reviews-btn" id="reviews-prev" aria-label="Previous testimonial">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <button type="button" class="reviews-btn" id="reviews-next" aria-label="Next testimonial">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         GALLERY SECTION
+         ====================================================================== -->
+    <section class="section section--alt" id="gallery" aria-labelledby="gallery-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">PHOTO GALLERY</span>
+          <h2 class="section-title" id="gallery-heading">Unfiltered Moments From Recent Trips</h2>
+          <p class="section-lead">Click on any photo to open full-screen view and explore real trip captures from our travelers.</p>
+        </div>
+
+        <div class="gallery-grid" id="gallery-grid">
+          <!-- Dynamically populated from js/data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Lightbox Modal -->
+    <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Image gallery lightbox">
+      <button type="button" class="lightbox__close" aria-label="Close image lightbox">✕</button>
+      <button type="button" class="lightbox__nav lightbox__prev" aria-label="Previous photo">‹</button>
+      <div class="lightbox__media">
+        <img src="" alt="" class="lightbox__img">
+        <div class="lightbox__caption"></div>
+        <div class="lightbox__counter font-mono"></div>
+      </div>
+      <button type="button" class="lightbox__nav lightbox__next" aria-label="Next photo">›</button>
+    </div>
+
+    <!-- ======================================================================
+         ABOUT SECTION
+         ====================================================================== -->
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text">
+            <span class="section-tag">OUR STORY</span>
+            <h2 class="section-title" id="about-heading">Crafting Authentic Journeys Since 2018</h2>
+            <p>Founded by <strong>Pankaj Sharma</strong>, Travel Googly started with a simple belief: Indian travelers deserve personalized holiday planning with zero fluff, honest price transparency, and a real human available when it matters.</p>
+            <p>Whether it is coordinating a senior citizen Char Dham pilgrimage, arranging private pool villas for honeymooners in Bali, or organizing high-altitude Ladakh bike expeditions, our ground team manages every transfer, voucher, and itinerary detail with utmost devotion.</p>
+            
+            <div style="margin-top: 16px; padding: 16px; background-color: var(--surface-alt); border-radius: 8px; border: 1px solid var(--line); font-size: 0.875rem;">
+              <div style="font-weight: 600; color: var(--ink); margin-bottom: 4px;">Head Office & Booking Desk</div>
+              <div style="color: var(--ink-soft);">Shop No. 10, Jiwaji Ganj, Morena, Madhya Pradesh – 476001</div>
+              <div style="color: var(--ink-soft); margin-top: 4px;">Email: <a href="mailto:info@travelgoogly.org" style="color: var(--accent);">info@travelgoogly.org</a> • Call/WhatsApp: <a href="tel:+918319390510" style="color: var(--accent);">+91 83193 90510</a></div>
+            </div>
+
+            <div style="margin-top: 16px;">
+              <button type="button" class="btn btn--primary btn-open-inquiry">Talk to Pankaj & Team</button>
+            </div>
+          </div>
+
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-card__num">2,000+</span>
+              <span class="stat-card__label">Happy Travelers Served</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__num">4.9★</span>
+              <span class="stat-card__label">Verified Google Rating</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__num">48+</span>
+              <span class="stat-card__label">Domestic & Global Routes</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__num">100%</span>
+              <span class="stat-card__label">Customizable Itineraries</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         FAQ SECTION
+         ====================================================================== -->
+    <section class="section section--alt" id="faq" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="section-header section-header--center">
+          <span class="section-tag">GOT QUESTIONS?</span>
+          <h2 class="section-title" id="faq-heading">Frequently Asked Questions</h2>
+          <p class="section-lead">Clear answers regarding advance booking, payments, cancellations, visas, and customization.</p>
+        </div>
+
+        <div class="faq-list" id="faq-list">
+          <!-- Dynamically populated from js/data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         CONTACT SECTION
+         ====================================================================== -->
+    <section class="section" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">LET'S CONNECT</span>
+          <h2 class="section-title" id="contact-heading">Start Planning Your Next Holiday</h2>
+          <p class="section-lead">Message our travel desk directly or fill out the quick contact form below.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Compact Form -->
+          <div class="contact-card">
+            <h3 style="margin-bottom: 20px;">Send a Direct Message</h3>
+            <form class="contact-form" id="contact-form">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Full Name <span class="req">*</span></label>
+                <input type="text" id="contact-name" class="form-control" placeholder="e.g. Ramesh Sharma" required>
+                <span class="form-error">Please enter your full name.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-mobile" class="form-label">WhatsApp Number <span class="req">*</span></label>
+                <input type="tel" id="contact-mobile" inputmode="numeric" class="form-control" placeholder="10-digit mobile number" required>
+                <span class="form-error">Please enter a valid 10-digit mobile number.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Tell Us About Your Trip</label>
+                <textarea id="contact-message" class="form-control" rows="3" placeholder="Destination, expected dates, group size, or specific preferences..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn--wa btn--full" style="font-size: 1rem;">
+                Send Message via WhatsApp →
+              </button>
+            </form>
+          </div>
+
+          <!-- Right: Direct Contact Details -->
+          <div class="contact-info">
+            <div class="contact-info-block">
+              <div class="contact-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+              </div>
+              <div>
+                <div class="contact-detail-title">Call / WhatsApp Hotline</div>
+                <a href="tel:+918319390510" class="contact-detail-val">+91 83193 90510</a>
+              </div>
+            </div>
+
+            <div class="contact-info-block">
+              <div class="contact-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <div class="contact-detail-title">Email Address</div>
+                <a href="mailto:info@travelgoogly.org" class="contact-detail-val">info@travelgoogly.org</a>
+              </div>
+            </div>
+
+            <div class="contact-info-block">
+              <div class="contact-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <div class="contact-detail-title">Operational Hours</div>
+                <div class="contact-detail-val">9:00 AM – 9:00 PM IST (Mon – Sun)</div>
+              </div>
+            </div>
+
+            <div class="contact-info-block">
+              <div class="contact-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <div class="contact-detail-title">Office Location</div>
+                <div class="contact-detail-val" style="font-weight: 400; font-size: 0.9375rem; color: var(--ink-soft);">
+                  Shop No. 10, Jiwaji Ganj, Morena, Madhya Pradesh – 476001
+                </div>
+              </div>
+            </div>
+
+            <!-- Map Embed Placeholder -->
+            <!-- 
+            To display your Google Maps location, uncomment the iframe below and replace the src with your Google Maps embed URL:
+            <div style="border-radius: 10px; overflow: hidden; border: 1px solid var(--line); margin-top: 8px;">
+              <iframe title="Travel Googly Office Location" src="https://maps.google.com/maps?q=Jiwaji+Ganj+Morena+Madhya+Pradesh+476001&t=&z=14&ie=UTF8&iwloc=&output=embed" width="100%" height="180" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="site-logo">
+            <img src="assets/logo-light.svg" alt="Travel Googly" class="logo-light" width="148" height="36">
+            <img src="assets/logo.svg" alt="Travel Googly" class="logo-dark" width="148" height="36">
+          </a>
+          <p>Custom-tailored holiday packages for Indian travelers with hand-picked hotels, transparent rates, and instant quotes on WhatsApp.</p>
+          <p style="font-size: 0.8125rem; color: rgba(255, 255, 255, 0.6); margin-top: 4px;">
+            Shop No. 10, Jiwaji Ganj, Morena, Madhya Pradesh – 476001
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-col__title">Popular Packages</div>
+          <div class="footer-links">
+            <a href="package.html?slug=nepal-kathmandu-pokhara-valley">Nepal Kathmandu & Pokhara</a>
+            <a href="package.html?slug=nepal-muktinath-yatra-pilgrimage">Nepal Muktinath Yatra</a>
+            <a href="package.html?slug=goa-beach-break">Goa Beach Break</a>
+            <a href="package.html?slug=kashmir-valley-gulmarg">Kashmir Valley & Gulmarg</a>
+            <a href="package.html?slug=bali-tropical-honeymoon">Bali Villa Honeymoon</a>
+            <a href="package.html?slug=char-dham-yatra">Char Dham Yatra</a>
+            <a href="package.html?slug=dubai-city-desert-adventure">Dubai City & Desert</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-col__title">Quick Links</div>
+          <div class="footer-links">
+            <a href="#packages">All Packages</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#about">About Agency</a>
+            <a href="#reviews">Traveler Reviews</a>
+            <a href="#faq">Frequently Asked Questions</a>
+            <a href="#contact">Contact Support</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-col__title">WhatsApp Travel Desk</div>
+          <p style="font-size: 0.875rem;">Fastest way to get quotes & itinerary assistance:</p>
+          <a href="tel:+918319390510" class="font-mono" style="color: #FFFFFF; font-size: 1.125rem;">+91 83193 90510</a>
+          <a href="mailto:info@travelgoogly.org" style="color: rgba(255, 255, 255, 0.8); font-size: 0.875rem; display: block; margin-top: 4px;">info@travelgoogly.org</a>
+          <p style="font-size: 0.75rem; color: rgba(255, 255, 255, 0.5); margin-top: 4px;">Available Mon–Sun: 9:00 AM – 9:00 PM IST</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Travel Googly. All rights reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Cancellation Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       SIGNATURE ENTRY INQUIRY POPUP MODAL
+       ======================================================================== -->
+  <div class="modal-overlay" id="inquiry-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="inquiry-modal-title">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <img src="assets/logo.svg" alt="Travel Googly" width="120" height="28" style="height: 28px; width: auto;">
+          <span class="chip is-active" style="padding: 2px 8px; font-size: 0.6875rem;">Instant Quote</span>
+        </div>
+        <button type="button" class="modal-close-btn" id="inquiry-close-btn" aria-label="Close inquiry modal">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <h2 id="inquiry-modal-title" style="font-size: 1.35rem; margin-bottom: 6px;">Where would you like to travel?</h2>
+        <p style="font-size: 0.875rem; margin-bottom: 20px;">Fill out this quick 30-second form to receive 2–3 customized quote options directly on WhatsApp.</p>
+
+        <form id="inquiry-form" novalidate>
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label for="inq-name" class="form-label">Full name <span class="req">*</span></label>
+              <input type="text" id="inq-name" class="form-control" placeholder="e.g. Ankit Sharma" required autocomplete="name">
+              <span class="form-error" id="err-name">Please enter your name.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="inq-mobile" class="form-label">WhatsApp number <span class="req">*</span></label>
+              <input type="tel" id="inq-mobile" inputmode="numeric" class="form-control" placeholder="10-digit mobile (e.g. 9876543210)" required autocomplete="tel">
+              <span class="form-error" id="err-mobile">Please enter a valid 10-digit mobile number.</span>
+            </div>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label for="inq-destination" class="form-label">Destination <span class="req">*</span></label>
+              <select id="inq-destination" class="form-control" required>
+                <option value="" disabled selected>Select destination</option>
+                <optgroup label="Domestic Destinations">
+                  <option value="Goa">Goa Beach Break</option>
+                  <option value="Kashmir">Kashmir & Gulmarg</option>
+                  <option value="Manali">Manali & Solang</option>
+                  <option value="Kerala">Kerala Backwaters & Munnar</option>
+                  <option value="Rajasthan">Rajasthan Heritage Circuit</option>
+                  <option value="Andaman">Andaman Islands</option>
+                  <option value="Ladakh">Ladakh Bike / SUV Tour</option>
+                  <option value="Northeast">Northeast & Meghalaya</option>
+                  <option value="Char Dham">Char Dham Yatra</option>
+                  <option value="Do Dham">Do Dham (Kedarnath-Badrinath)</option>
+                </optgroup>
+                <optgroup label="International Destinations">
+                  <option value="Nepal (Kathmandu & Pokhara)">Nepal (Kathmandu & Pokhara)</option>
+                  <option value="Nepal (Muktinath Yatra)">Nepal (Muktinath Yatra)</option>
+                  <option value="Dubai">Dubai & Abu Dhabi</option>
+                  <option value="Thailand">Thailand (Bangkok-Pattaya-Phuket)</option>
+                  <option value="Bali">Bali Villa & Island</option>
+                  <option value="Singapore–Malaysia">Singapore & Malaysia</option>
+                  <option value="Vietnam">Vietnam Discovery</option>
+                  <option value="Maldives">Maldives Luxury Resort</option>
+                  <option value="Sri Lanka">Sri Lanka Highlights</option>
+                  <option value="Europe">Europe Classic</option>
+                  <option value="Azerbaijan">Azerbaijan Baku</option>
+                </optgroup>
+                <optgroup label="Other">
+                  <option value="Custom / Need suggestions">Custom / Need suggestions</option>
+                </optgroup>
+              </select>
+              <span class="form-error" id="err-destination">Please choose a destination.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="inq-travellers" class="form-label">Travellers <span class="req">*</span></label>
+              <input type="number" id="inq-travellers" class="form-control" min="1" max="30" value="2" required>
+              <span class="form-error" id="err-travellers">Please specify number of travellers (1–30).</span>
+            </div>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label for="inq-month" class="form-label">Travel month <span class="req">*</span></label>
+              <select id="inq-month" class="form-control js-month-select" required>
+                <option value="" disabled selected>Select month</option>
+              </select>
+              <span class="form-error" id="err-month">Please select preferred month.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="inq-budget" class="form-label">Budget per person <span class="req">*</span></label>
+              <select id="inq-budget" class="form-control" required>
+                <option value="" disabled selected>Select budget range</option>
+                <option value="Under ₹15,000">Under ₹15,000</option>
+                <option value="₹15,000–30,000">₹15,000–30,000</option>
+                <option value="₹30,000–60,000">₹30,000–60,000</option>
+                <option value="₹60,000–1,00,000">₹60,000–1,00,000</option>
+                <option value="Above ₹1,00,000">Above ₹1,00,000</option>
+                <option value="Need suggestions">Need suggestions</option>
+              </select>
+              <span class="form-error" id="err-budget">Please select an estimated budget.</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="form-label">
+              <span>Anything specific? (optional)</span>
+              <span class="form-char-count" id="inquiry-char-counter">0/300 chars</span>
+            </div>
+            <textarea id="inq-notes" class="form-control" rows="2" maxlength="300" placeholder="e.g. Honeymoon candlelight dinner, 4-star hotel preference, vegetarian meals..."></textarea>
+          </div>
+
+          <div class="form-group" style="margin-top: 12px;">
+            <label class="form-checkbox-label">
+              <input type="checkbox" id="inq-offers" checked>
+              <span>Send me special offers and festival discounts on WhatsApp</span>
+            </label>
+          </div>
+
+          <div style="margin-top: 20px;">
+            <button type="submit" class="btn btn--wa btn--full" style="font-size: 1rem; padding: 14px 20px;">
+              Send Inquiry on WhatsApp →
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn--text" id="inquiry-maybe-later">Maybe later</button>
+        <span style="font-size: 0.75rem; color: var(--ink-soft);">🔒 No spam • We respond within 2 hours</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       FLOATING ACTIONS (WhatsApp & Back To Top)
+       ======================================================================== -->
+  <div class="floating-actions" aria-label="Quick actions">
+    <button type="button" class="btn-back-to-top" id="back-to-top-btn" aria-label="Scroll back to top">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <a href="#" class="btn-floating-wa has-pulse" id="floating-wa-btn" target="_blank" rel="noopener" aria-label="Chat with Travel Googly on WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.03C9.36 7.03 9.08 7.09 8.84 7.35C8.61 7.61 7.94 8.23 7.94 9.5C7.94 10.77 8.86 12 9 12.18C9.13 12.36 10.8 14.93 13.36 16.03C15.5 16.96 15.93 16.77 16.39 16.73C16.85 16.69 17.88 16.12 18.09 15.53C18.3 14.94 18.3 14.43 18.24 14.33C18.17 14.23 18.01 14.17 17.76 14.04C17.51 13.92 16.28 13.31 16.05 13.23C15.82 13.15 15.66 13.1 15.5 13.34C15.33 13.59 14.86 14.14 14.72 14.3C14.58 14.46 14.44 14.48 14.19 14.36C13.94 14.23 12.9 13.89 11.66 12.79C10.7 11.93 10.05 10.87 9.91 10.63C9.77 10.38 9.89 10.25 10.02 10.13C10.13 10.02 10.27 9.84 10.39 9.7C10.51 9.56 10.56 9.45 10.64 9.29C10.72 9.12 10.68 8.98 10.62 8.85C10.56 8.73 10.09 7.57 9.9 7.09C9.71 6.63 9.52 6.69 9.38 6.68L8.94 6.68C8.94 6.68 9.53 7.03 9.53 7.03Z"/></svg>
+    </a>
+  </div>
+
+  <!-- Plain script imports (no type="module", runs cleanly over file://) -->
+  <script src="js/whatsapp.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148 36" width="148" height="36" fill="none">
+  <!-- Geometric compass/globe mark -->
+  <g transform="translate(2, 6)">
+    <circle cx="12" cy="12" r="11" stroke="#4D70FF" stroke-width="2" fill="rgba(77, 112, 255, 0.2)"/>
+    <path d="M12 4L14.5 9.5L20 12L14.5 14.5L12 20L9.5 14.5L4 12L9.5 9.5L12 4Z" fill="#FFFFFF"/>
+    <circle cx="12" cy="12" r="2" fill="#4D70FF"/>
+  </g>
+  <!-- Wordmark (White + Blue for dark backgrounds) -->
+  <text x="32" y="24" font-family="'Instrument Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="600" fill="#FFFFFF" letter-spacing="-0.01em">travel</text>
+  <text x="76" y="24" font-family="'Bricolage Grotesque', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="700" fill="#4D70FF" letter-spacing="-0.02em">googly</text>
+  <circle cx="134" cy="15" r="2.5" fill="#25D366"/>
+</svg>
