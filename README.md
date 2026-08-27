@@ -9,7 +9,9 @@ A complete, production-ready, zero-dependency marketing website for **Travel Goo
 ```text
 Travel googly/
 ├── index.html            # Main homepage (SEO, JSON-LD Schema, Hero, Packages, Reviews, etc.)
+├── about.html            # Dedicated About Us page (Founder story, core values, services, office)
 ├── package.html          # Dynamic package detail template (?slug=...)
+├── travelgoogly logo.png # Official 3D emblem brand logo
 ├── css/
 │   └── styles.css        # Single organized stylesheet (Tokens, Layout, Components, Animations)
 ├── js/
@@ -17,7 +19,7 @@ Travel googly/
 │   ├── whatsapp.js       # WhatsApp URL engine & number configuration (Single source of truth)
 │   └── main.js           # Interactive UI logic (Popup modal, validation, filters, slider, lightbox)
 ├── assets/
-│   ├── logo.svg          # Brand vector wordmark
+│   ├── travelgoogly-logo.png # Official brand logo emblem
 │   └── favicon.svg       # Brand favicon
 └── README.md             # Documentation & maintainer guide
 ```

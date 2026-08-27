@@ -394,44 +394,62 @@ ul, ol {
 .site-logo {
   display: inline-flex;
   align-items: center;
-  height: var(--logo-h);
+  gap: var(--space-12);
+  text-decoration: none;
+  line-height: 1;
 }
 
-.site-logo img {
-  height: var(--logo-h);
+.site-logo__img {
+  height: 44px;
   width: auto;
-  display: block;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.15));
+  transition: transform var(--transition-fast);
 }
 
-/* Adaptive logo visibility: Light logo for dark backgrounds, Dark logo for light backgrounds */
-.site-header:not(.is-scrolled) .site-logo .logo-dark {
-  display: none !important;
-}
-.site-header:not(.is-scrolled) .site-logo .logo-light {
-  display: block !important;
+.site-logo:hover .site-logo__img {
+  transform: scale(1.06);
 }
 
-.site-header.is-scrolled .site-logo .logo-dark {
-  display: block !important;
-}
-.site-header.is-scrolled .site-logo .logo-light {
-  display: none !important;
-}
-
-.site-footer .site-logo .logo-dark {
-  display: none !important;
-}
-.site-footer .site-logo .logo-light {
-  display: block !important;
+.site-logo__text {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
-.mobile-drawer .site-logo .logo-light,
-.modal-header .logo-light {
-  display: none !important;
+/* Dynamic contrast for dark and light headers/footers */
+.site-header:not(.is-scrolled) .site-logo__primary {
+  color: #FFFFFF;
 }
-.mobile-drawer .site-logo .logo-dark,
-.modal-header .logo-dark {
-  display: block !important;
+.site-header:not(.is-scrolled) .site-logo__accent {
+  color: #4D70FF;
+}
+
+.site-header.is-scrolled .site-logo__primary {
+  color: var(--ink);
+}
+.site-header.is-scrolled .site-logo__accent {
+  color: var(--accent);
+}
+
+.site-footer .site-logo__primary {
+  color: #FFFFFF;
+}
+.site-footer .site-logo__accent {
+  color: #4D70FF;
+}
+
+.mobile-drawer .site-logo__primary,
+.modal-header .site-logo__primary {
+  color: var(--ink);
+}
+.mobile-drawer .site-logo__accent,
+.modal-header .site-logo__accent {
+  color: var(--accent);
 }
 
 .site-nav {

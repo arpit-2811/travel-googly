@@ -22,7 +22,8 @@
   <meta name="twitter:image" content="https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=1200&q=80">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="icon" type="image/png" href="assets/travelgoogly-logo.png">
+  <link rel="apple-touch-icon" href="assets/travelgoogly-logo.png">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/styles.css">
@@ -37,7 +38,7 @@
       "@type": "Person",
       "name": "Pankaj Sharma"
     },
-    "image": "https://travelgoogly.com/assets/logo.svg",
+    "image": "https://travelgoogly.com/assets/travelgoogly-logo.png",
     "telephone": "+918319390510",
     "email": "info@travelgoogly.org",
     "url": "https://travelgoogly.com",
@@ -82,8 +83,11 @@
   <header class="site-header" role="banner">
     <div class="container">
       <a href="index.html" class="site-logo" aria-label="Travel Googly Home">
-        <img src="assets/logo-light.svg" alt="Travel Googly" class="logo-light" width="148" height="36">
-        <img src="assets/logo.svg" alt="Travel Googly" class="logo-dark" width="148" height="36">
+        <img src="assets/travelgoogly-logo.png" alt="Travel Googly" class="site-logo__img" width="44" height="44">
+        <span class="site-logo__text">
+          <span class="site-logo__primary">Travel</span>
+          <span class="site-logo__accent">Googly</span>
+        </span>
       </a>
 
       <nav class="site-nav" aria-label="Primary navigation">
@@ -123,8 +127,11 @@
     <div class="mobile-drawer__content">
       <div class="mobile-drawer__header">
         <a href="index.html" class="site-logo">
-          <img src="assets/logo-light.svg" alt="Travel Googly" class="logo-light" width="148" height="36">
-          <img src="assets/logo.svg" alt="Travel Googly" class="logo-dark" width="148" height="36">
+          <img src="assets/travelgoogly-logo.png" alt="Travel Googly" class="site-logo__img" width="44" height="44">
+          <span class="site-logo__text">
+            <span class="site-logo__primary">Travel</span>
+            <span class="site-logo__accent">Googly</span>
+          </span>
         </a>
       </div>
       <nav aria-label="Mobile navigation">
@@ -623,8 +630,11 @@
       <div class="footer-grid">
         <div class="footer-col">
           <a href="index.html" class="site-logo">
-            <img src="assets/logo-light.svg" alt="Travel Googly" class="logo-light" width="148" height="36">
-            <img src="assets/logo.svg" alt="Travel Googly" class="logo-dark" width="148" height="36">
+            <img src="assets/travelgoogly-logo.png" alt="Travel Googly" class="site-logo__img" width="44" height="44">
+            <span class="site-logo__text">
+              <span class="site-logo__primary">Travel</span>
+              <span class="site-logo__accent">Googly</span>
+            </span>
           </a>
           <p>Custom-tailored holiday packages for Indian travelers with hand-picked hotels, transparent rates, and instant quotes on WhatsApp.</p>
           <p style="font-size: 0.8125rem; color: rgba(255, 255, 255, 0.6); margin-top: 4px;">
@@ -648,12 +658,12 @@
         <div class="footer-col">
           <div class="footer-col__title">Quick Links</div>
           <div class="footer-links">
-            <a href="#packages">All Packages</a>
-            <a href="#destinations">Destinations</a>
-            <a href="#about">About Agency</a>
-            <a href="#reviews">Traveler Reviews</a>
-            <a href="#faq">Frequently Asked Questions</a>
-            <a href="#contact">Contact Support</a>
+            <a href="index.html#packages">All Packages</a>
+            <a href="index.html#destinations">Destinations</a>
+            <a href="about.html">About Agency</a>
+            <a href="index.html#reviews">Traveler Reviews</a>
+            <a href="index.html#faq">Frequently Asked Questions</a>
+            <a href="index.html#contact">Contact Support</a>
           </div>
         </div>
 
@@ -683,8 +693,9 @@
   <div class="modal-overlay" id="inquiry-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="inquiry-modal-title">
     <div class="modal-card">
       <div class="modal-header">
-        <div style="display: flex; align-items: center; gap: 12px;">
-          <img src="assets/logo.svg" alt="Travel Googly" width="120" height="28" style="height: 28px; width: auto;">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <img src="assets/travelgoogly-logo.png" alt="Travel Googly" width="34" height="34" style="height: 34px; width: auto; object-fit: contain;">
+          <span style="font-family: var(--font-display); font-size: 1.125rem; font-weight: 700; color: var(--ink);">Travel <span style="color: var(--accent);">Googly</span></span>
           <span class="chip is-active" style="padding: 2px 8px; font-size: 0.6875rem;">Instant Quote</span>
         </div>
         <button type="button" class="modal-close-btn" id="inquiry-close-btn" aria-label="Close inquiry modal">✕</button>
