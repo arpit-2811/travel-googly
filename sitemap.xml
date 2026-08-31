@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://travelgoogly.org/</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://travelgoogly.org/assets/travelgoogly-logo.png</image:loc>
+      <image:title>Travel Googly — Tour and Travel Agency</image:title>
+    </image:image>
+  </url>
+
+  <!-- About Us Page -->
+  <url>
+    <loc>https://travelgoogly.org/about.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://travelgoogly.org/assets/travelgoogly-logo.png</image:loc>
+      <image:title>About Travel Googly — Founder Pankaj Sharma</image:title>
+    </image:image>
+  </url>
+
+  <!-- Curated Holiday Package Pages -->
+  <url>
+    <loc>https://travelgoogly.org/package.html?slug=goa-beach-break</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Goa Beach Break and Watersports Tour Package</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://travelgoogly.org/package.html?slug=kashmir-valley-gulmarg</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Kashmir Valley and Gulmarg Snowfields Holiday Package</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://travelgoogly.org/package.html?slug=manali-solang-honeymoon</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Manali and Solang Valley Honeymoon Special</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://travelgoogly.org/package.html?slug=kerala-backwaters-munnar</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Kerala Tea Gardens and Backwater Cruise Package</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://travelgoogly.org/package.html?slug=rajasthan-heritage-circuit</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Royal Rajasthan Heritage Circuit Tour</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://travelgoogly.org/package.html?slug=andaman-islands-paradise</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Andaman Islands and Radhanagar Beach Package</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://travelgoogly.org/package.html?slug=char-dham-yatra</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1609137144822-211c473138b3?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Sacred Char Dham Yatra Uttarakhand Package</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://travelgoogly.org/package.html?slug=ladakh-bike-expedition</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1581793745862-99fde7fa73d2?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Ladakh Bike and SUV Expedition</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://travelgoogly.org/package.html?slug=nepal-kathmandu-pokhara-valley</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Nepal Kathmandu and Pokhara Himalayan Escape</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://travelgoogly.org/package.html?slug=nepal-muktinath-yatra-pilgrimage</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1585409677983-0f6c41ca0c3b?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Sacred Nepal Muktinath Dham and Pashupatinath Yatra</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://travelgoogly.org/package.html?slug=dubai-city-desert-adventure</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Dubai City, Desert Safari and Marina Cruise</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://travelgoogly.org/package.html?slug=thailand-bangkok-pattaya</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Thailand Bangkok Temples and Coral Island Holiday</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://travelgoogly.org/package.html?slug=bali-tropical-honeymoon</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Bali Romantic Villa and Island Discovery</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://travelgoogly.org/package.html?slug=singapore-malaysia-family</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>Singapore and Malaysia Highlights Tour Package</image:title>
+    </image:image>
+  </url>
+
+</urlset>
